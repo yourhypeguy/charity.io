@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <form onsubmit="emailSend(); reset(); return false">
+
+    <input type="text" name="text" placeholder="enter name" id="name">
+    <input type="text" name="email" placeholder="mail" id="email"> 
+    <input type="text" name="number" placeholder="enter number" id="number">
+    <input type="file" name="photo" id="photo">
+    <button type="submit">submit</button>
+  </form>
+  </div>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  
+  <script>
+    
+
+      function emailSend(){
+        var userName = document.getElementById('name').value;
+
+    var email = document.getElementById('email').value;
+
+    var phone = document.getElementById('number').value;
+
+    var photo = document.getElementById('photo').value;
+
+    var messageBody = "name: " + userName + "<br/> Phone: " + phone +
+    "<br/> Email: " + email + "<br/> Photo: " + photo;
+
+
+       Email.send({
+       Host : "smtp.elasticemail.com",
+       Username : "yourhypeguy@gmail.com",
+       Password : "0510F25DA1C0091E604660DF07D0D3973244",
+       From : "yourhypeguy@gmail.com",
+       To : 'kingsleychidolue20@gmail.com',
+       Subject : "This is the subject",
+       Body : messageBody
+      }).then(
+        message => alert(message)
+      );
+      }
+  </script>
+</body>
+</html>
