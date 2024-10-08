@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate page</title>
+  <link rel="stylesheet" type="text/css" href="styleForCharity.css"/>
+</head>
+<body>
+  <nav>
+    <div class="nav">
+
+     <a href="index.html">
+       <div>
+         <img src="png/charityLogo3.png" alt="" style="width: 160px;">
+       </div>
+     </a>
+
+     <div class="nav-links">
+       <ul>
+         <li><a href="about-page.html" class="nav-link">About Us</a></li>
+         <li><a href="learn-more-page.html" class="nav-link">Latest News</a></li>
+         <li><a href="four-Options-link-page.html" class="nav-link">Our Work</a></li>
+         <li><a href="four-Options-link-page.html" class="nav-link">Get Involved</a></li>
+         <li><a href="Donate-page.html" class="nav-link">Donate</a></li>
+       </ul>
+     </div>
+
+     <div>
+       <img src="png/exploreLogo1.png" alt="" style="width: 140px;">
+     </div>
+
+    </div>
+ </nav>
+
+ <main>
+  <section>
+    <div class="donate-section">
+      <div class="donate-text-con">
+        <p>DONATE NOW</p>
+      <h1>Your contributions are impactful</h1>
+      </div>
+
+      <div class="donate-input-section">
+        <div class="donate-input-1">
+          
+
+          <div class="main-payment">
+            <p class="donate-input-p">The solutions are within reach. Each and every donation to TGG helps change the world.</p>
+            <p class="payment-p-text">PAY WITH CRYPTO</p>
+           
+
+            <div class="crypto-list">
+              <h4 class="crypto-text" >Bitcoin(BTC)</h4>
+
+             <div>
+              <img class="crypto-img" src="png/BTC-Address.png" alt="">
+             </div>
+
+             <p class="crypto-text">Scan</p>
+
+             <div class="coin-address-con">
+              <p class="coin-address">bc1q4anr389r43emg4qtz60dhxv9zden28hvsgnpu0</p>
+              <button onclick="copyText()" class="copy-coin">copy</button>
+             </div>
+             
+            </div>
+          </div>
+
+          <h3 class="crypto-pp"> Thank you for your Donation<3</h3>
+
+          <div>
+            <a href="crypto-page.html"><h3 class="crypto-back-button">previous menu</h3></a>
+          </div>
+        </div>
+     
+        
+        <div class="donate-input-2">
+          <div class="donate-input-2-picture">
+            <img src="png/smilingChildren3.png" alt="">
+          </div>
+        </div>
+         
+        
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <footer class="footer">
+      <div class="footer-background">
+  
+         <div class="footer-content">
+  
+          <div class="footer1">
+            <div>
+              <img src="png/charityLogo3.png" alt="" class="white-logo">
+             </div>
+      
+             <div>
+              <p>
+                Supporting and investing in provision for children and young people in conflict zone to ensure safty and the well being of each community affected.
+              </p>
+             </div>
+      
+             <div>
+              <img src="png/goldLogo.png" alt="" style="width: 130px;">
+             </div>
+           </div>
+    
+           <div class="footer2">
+    
+            <div class="footer-list-items">
+              <div class="footer-list-item1">
+                <ul>
+                  <li><a href="about-page.html">About Us</a></li>
+                  <li><a href="#">Annual Reports</a></li>
+                  <li><a href="learn-more-page.html">Latest News</a></li>
+                </ul>
+              </div>
+    
+              <div>
+                <ul>
+                  <li><a href="about-page.html">Our Work</a></li>
+                  <li><a href="four-Options-link-page.html">Get Involved</a></li>
+                  <li><a href="Donate-page.html">Donate</a></li>
+                </ul>
+              </div>
+              
+             </div>
+    
+             <div>
+              <img src="png/facebookPNG.png" alt="">
+    
+              <img src="png/TwiterPNG.png" alt="">
+    
+              <img src="png/instagramPNG.png" alt="">
+    
+              <img src="png/youtubePNG.png" alt="">
+            </div>
+    
+           </div>
+  
+        </div>
+  
+         <div class="footer3">
+          <h3>Stay Up to Date with TGG</h3>
+          <form action="">
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Email" required>
+            <div class="input-flex">
+              <input id="check-box" type="checkbox" required >
+  
+              <label for="check-box">I certify that I am at least 13 years old.</label>
+            </div>
+            
+            <input type="submit">s
+        
+          </form>
+         </div>
+  
+         
+      </div>
+      <div class="Copyright-text">
+        <p>© 2024 Copyright Giving Grove Foundation. All rights reserved.</p>
+  
+        <P>Terms & Conditions</P>
+  
+        Privacy Policy
+       </div>
+    </footer>
+  </section>
+ </main>
+  
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+ <script>
+    function copyText() {
+
+       /* Copy text into clipboard */
+      navigator.clipboard.writeText
+        ("bc1q4anr389r43emg4qtz60dhxv9zden28hvsgnpu0").then(()=> {
+          alert('Address Copied')
+        });
+      }
+ </script>
+</body>
+</html>
